@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="UTF-8">
+        <title>基礎網頁設計</title>
+    </head>
+    <body style="background-color: silver;text-align: center;">
+        <header>
+            <h1>BMI計算機</h1>
+        </header>
+        <article>
+            請在以下輸入身高體重
+            <section>
+            <form oninput="BMI.value = parseInt(W.value)/(parseInt(H.value)*parseInt(H.value)/10000)">
+                <p>身高(CM) : 
+                <input type="number" id="H" name="身高" required>
+                </p>
+                <p>體重(KG) : 
+                <input type="number" id="W" name="體重" required>
+                </p>
+                您的BMI為 : 
+                <output name="BMI" for="H W">0</output>
+            </form>
+            </section>
+        </article>
+    </body>
+</html>
